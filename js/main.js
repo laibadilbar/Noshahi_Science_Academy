@@ -263,4 +263,17 @@ document.addEventListener("DOMContentLoaded", function() {
     addContactCards(contactCardData);
   });
 
-  
+  // signup button
+
+  const signupBtn = document.querySelector('.signup');
+      signupBtn.addEventListener('click', () => {
+        const emailInput = document.querySelector('.form-control');
+        const email = emailInput.value.trim();
+        if (email) {
+          // Code to handle valid email input (e.g., send to server, display success message, etc.)
+          console.log(`Signup with email: ${email}`);
+        } else {
+          // Code to handle invalid email input (e.g., display error message)
+          alert('Please enter a valid email address.');
+        }
+      });

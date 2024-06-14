@@ -37,22 +37,19 @@
     id="spinner"
     class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
   >
-    <div
-      class="loader-square text-primary"
-      style="width: 6rem; height: 5rem"
+    <!-- <div
+      class="spinner-border text-primary"
+      style="width: 3rem; height: 3rem"
       role="status"
-    >
-      <i
-        class="fa fa-graduation-cap text-primary"
-        aria-hidden="true"
-        style="font-size: 2rem"
-      ></i>
+    > -->
+    <div class="loader-square text-primary" style="width: 6rem; height: 5rem" role="status">
+      <i class="fa fa-graduation-cap text-primary" aria-hidden="true" style="font-size: 2rem;"></i> 
       <b>NSA</b>
       <span class="sr-only">Loading...</span>
     </div>
   </div>
     <!-- Spinner End -->
-`
+
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
@@ -71,9 +68,8 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Our Team</a> 
-                        <a href="announcement.html" class="dropdown-item">Announcement</a>
-                        <a href="schedule.html" class="dropdown-item active">Schedule</a>
+                        <a href="team.html" class="dropdown-item active">Our Team</a>
+                        <a href="schedule.html" class="dropdown-item">Schedule</a>
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
@@ -90,12 +86,12 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Our Schedule</h1>
+                    <h1 class="display-3 text-white animated slideInDown">See Our Latest Anouncement</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
                             <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
                             <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Schedule</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Anouncement</li>
                         </ol>
                     </nav>
                 </div>
@@ -103,173 +99,107 @@
         </div>
     </div>
     <!-- Header End -->
-
-   <!-- schedule start -->
-   <div class="container my-5">
-    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-        <h6 class="section-title bg-white text-center text-primary px-3">
-          NSA
-        </h6>
+<!-- anouncement -->
+    <div class="container-xxl py-5">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <h1 class="mb-4">Our Latest Announcement</h1>
+                                <p class="mb-4">We are excited to announce that our academy will start its classes from 1st June 2023. We have been providing quality education for the past 10 years and are committed to continuing our legacy of excellence.</p>
+                                <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-phone-alt text-white"></i>
+                                    </div>
+                                    <div class="ps-4">
+                                        <h5 class="mb-2">Call to get started</h5>
+                                        <h4 class="text-primary mb-0">+92 3075071297</h4>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="col-lg-6">
+                                <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/cat-3.jpg" style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                    </div>
     </div>
-      <h2 class="text-center">Assignment Schedule</h2>
-      <p class="text-center">At Noshahi Science Academy, we provide a structured schedule to ensure that students can plan their study time effectively. <br> Below are the class schedules for different grades.</p>
-    </div>
-  
-  
-    <!-- 9th and 10th Grade Schedule -->
-    <!-- <div class="row schedule-table">
-      <div class="col-12"> 
-        <button class="btn btn-primary toggle-btn" data-target="#schedule9th10th">Show/Hide 9th and 10th Grade Schedule</button>
-        <div id="schedule9th10th" class="schedule-content">
-          <h4>9th and 10th Grade</h4>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Day</th>
-                <th>Time</th>
-                <th>Subject</th>
-                <th>Instructor</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Monday</td>
-                <td>9:00 AM - 10:00 AM</td>
-                <td>Mathematics</td>
-                <td>Sharjil Noshahi</td>
-              </tr>
-              <tr>
-                <td>Tuesday</td>
-                <td>10:00 AM - 11:00 AM</td>
-                <td>Physics</td>
-                <td>Muhammad Muzammil</td>
-              </tr>
-              <tr>
-                <td>Wednesday</td>
-                <td>11:00 AM - 12:00 PM</td>
-                <td>Chemistry</td>
-                <td>Muhammad Bilal</td>
-              </tr>
-              <tr>
-                <td>Thursday</td>
-                <td>12:00 PM - 1:00 PM</td>
-                <td>Biology</td>
-                <td>Muhammad Waleed</td>
-              </tr>
-              <tr>
-                <td>Friday</td>
-                <td>9:00 AM - 10:00 AM</td>
-                <td>English</td>
-                <td>Sharjil Noshahi</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-   -->
-    <!-- 1st and 2nd Year Schedule -->
-    <!-- <div class="row schedule-table">
-      <div class="col-12">
-        <button class="btn btn-primary toggle-btn" data-target="#schedule1st2nd">Show/Hide 1st and 2nd Year Schedule</button>
-        <div id="schedule1st2nd" class="schedule-content">
-          <h4>1st and 2nd Year</h4>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Day</th>
-                <th>Time</th>
-                <th>Subject</th>
-                <th>Instructor</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Monday</td>
-                <td>1:00 PM - 2:00 PM</td>
-                <td>Physics</td>
-                <td>Sharjil Noshahi</td>
-              </tr>
-              <tr>
-                <td>Tuesday</td>
-                <td>2:00 PM - 3:00 PM</td>
-                <td>Mathematics</td>
-                <td>Muhammad Muzammil</td>
-              </tr>
-              <tr>
-                <td>Wednesday</td>
-                <td>3:00 PM - 4:00 PM</td>
-                <td>Chemistry</td>
-                <td>Muhammad Bilal</td>
-              </tr>
-              <tr>
-                <td>Thursday</td>
-                <td>4:00 PM - 5:00 PM</td>
-                <td>Biology</td>
-                <td>Muhammad Waleed</td>
-              </tr>
-              <tr>
-                <td>Friday</td>
-                <td>1:00 PM - 2:00 PM</td>
-                <td>English</td>
-                <td>Sharjil Noshahi</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-   -->
- 
-   <div class="container mt-5">
-    <div class="row mt-4">
-        <div class="col-md-3">
-            <div class="schedule-box">
-                <div class="icon">
-                    <i class="fas fa-book"></i>
+    <!-- Attractive Section Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+        
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/cat-2.jpg">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4">Experienced Academy</h1>
+                        <p class="mb-4">This is an attractive section that showcases our academy's unique features and benefits. We strive to provide a world-class learning experience for our students.</p>
+                        <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                                <i class="fa fa-star text-white"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h5 class="mb-2">Experienced Faculty</h5>
+                                <p class="mb-0">Our faculty members are highly experienced and dedicated to ensuring your success.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                                <i class="fa fa-book text-white"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h5 class="mb-2">Comprehensive Curriculum</h5>
+                                <p class="mb-0">Our curriculum is designed to provide you with the knowledge and skills you need to succeed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <h5>Matric Program</h5>
-                <p>Check the latest schedule</p>
-                <a href="matric.html" class="btn btn-primary">View Schedule <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="schedule-box">
-                <div class="icon">
-                    <i class="fas fa-book"></i>
-                </div>
-                <h5>F.A Program</h5>
-                <p>Check the latest schedule</p>
-                <a href="fa.html" class="btn btn-primary">View Schedule <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="schedule-box">
-                <div class="icon">
-                    <i class="fas fa-book"></i>
-                </div>
-                <h5>BA Degree Program</h5>
-                <p>Check the latest schedule</p>
-                <a href="ba.html" class="btn btn-primary">View Schedule <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="schedule-box">
-                <div class="icon">
-                    <i class="fas fa-book"></i>
-                </div>
-                <h5>B.Ed Program</h5>
-                <p>Check the latest schedule</p>
-                <a href="bed.html" class="btn btn-primary">View Schedule <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </div>
-   </div>
+        <!-- Attractive Section End -->
+    
+                         <!-- Academy Showcase Section Start -->
+                         <div class="container-xxl py-5">
+                            <div class="container">
+                                <div class="row g-5">
+                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                                        <h1 class="mb-4">Academy Showcase</h1>
+                                        <p class="mb-4">This section showcases our academy's facilities, resources, and achievements. We take pride in providing a conducive learning environment for our students.</p>
+                                        <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.5s">
+                                            <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                                                <i class="fa fa-building text-white"></i>
+                                            </div>
+                                            <div class="ps-4">
+                                                <h5 class="mb-2">Modern Facilities</h5>
+                                                <p class="mb-0">Our academy is equipped with state-of-the-art facilities to enhance your learning experience.</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.7s">
+                                            <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                                                <i class="fa fa-trophy text-white"></i>
+                                            </div>
+                                            <div class="ps-4">
+                                                <h5 class="mb-2">Achievements</h5>
+                                                <p class="mb-0">Our students have achieved remarkable success in various academic and extracurricular activities.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+        
+                                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/cat-1.jpg" style="width: 100%; height: 100%;">
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Academy Showcase Section End -->
+                 
+         
+        
+    
 
-
-  
+                
         
 
     <!-- Footer Start -->

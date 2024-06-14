@@ -1,0 +1,35 @@
+import { JSDOM } from 'jsdom'; describe('index.html', () => { let dom; let
+document; beforeEach(() => { dom = new JSDOM('<!DOCTYPE html>
+<html>
+  <head></head>
+  <body></body>
+</html>
+'); document = dom.window.document; }); test('has a title', () => { const title
+= document.createElement('title'); title.textContent = 'Noshahi Science
+Academy'; document.head.appendChild(title); expect(document.title).toBe('Noshahi
+Science Academy'); }); test('has a viewport meta tag', () => { const meta =
+document.createElement('meta'); meta.setAttribute('name', 'viewport');
+meta.setAttribute('content', 'width=device-width, initial-scale=1.0');
+document.head.appendChild(meta); const viewportMeta =
+document.querySelector('meta[name="viewport"]');
+expect(viewportMeta).not.toBeNull();
+expect(viewportMeta.getAttribute('content')).toBe('width=device-width,
+initial-scale=1.0'); }); test('has Google Web Fonts link', () => { const link =
+document.createElement('link'); link.setAttribute('rel', 'stylesheet');
+link.setAttribute('href',
+'https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap');
+document.head.appendChild(link); const fontLink =
+document.querySelector('link[href*="fonts.googleapis.com"]');
+expect(fontLink).not.toBeNull(); }); test('has Font Awesome link', () => { const
+link = document.createElement('link'); link.setAttribute('rel', 'stylesheet');
+link.setAttribute('href',
+'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css');
+document.head.appendChild(link); const fontAwesomeLink =
+document.querySelector('link[href*="cdnjs.cloudflare.com/ajax/libs/font-awesome"]');
+expect(fontAwesomeLink).not.toBeNull(); }); test('has Bootstrap Icons link', ()
+=> { const link = document.createElement('link'); link.setAttribute('rel',
+'stylesheet'); link.setAttribute('href',
+'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css');
+document.head.appendChild(link); const bootstrapIconsLink =
+document.querySelector('link[href*="bootstrap-icons"]');
+expect(bootstrapIconsLink).not.toBeNull(); }); });

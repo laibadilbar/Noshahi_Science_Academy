@@ -34,17 +34,22 @@
 <body>
     <!-- Spinner Start -->
     <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div class="loader-square text-primary" style="width: 6rem; height: 5rem" role="status">
-        <i class="fa fa-graduation-cap text-primary" aria-hidden="true" style="font-size: 2rem;"></i> 
-        <b>NSA</b>
-        <span class="sr-only">Loading...</span>
-      </div>
+    id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+  >
+    <!-- <div
+      class="spinner-border text-primary"
+      style="width: 3rem; height: 3rem"
+      role="status"
+    > -->
+    <div class="loader-square text-primary" style="width: 6rem; height: 5rem" role="status">
+      <i class="fa fa-graduation-cap text-primary" aria-hidden="true" style="font-size: 2rem;"></i> 
+      <b>NSA</b>
+      <span class="sr-only">Loading...</span>
     </div>
+  </div>
     <!-- Spinner End -->
-`
+
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
@@ -63,9 +68,9 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Our Team</a> 
+                        <a href="team.html" class="dropdown-item active">Our Team</a>
                         <a href="announcement.html" class="dropdown-item">Announcement</a>
-                        <a href="schedule.html" class="dropdown-item active">Schedule</a>
+                        <a href="schedule.html" class="dropdown-item">Schedule</a>
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
@@ -82,12 +87,12 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Our Schedule</h1>
+                    <h1 class="display-3 text-white animated slideInDown">Our FAQs</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
                             <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
                             <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">BA Degree Schedule</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Faqs</li>
                         </ol>
                     </nav>
                 </div>
@@ -95,72 +100,93 @@
         </div>
     </div>
     <!-- Header End -->
-     <!-- matric schedule -->
     
-     <div class="container mt-5">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center text-primary px-3">
-              NSA
-            </h6>
-        </div>
-        <h1 class="text-center">BA Degree Program Schedule</h1>
-        <p class="text-center">Here is the schedule for the BA Degree Program:</p>
-        <div class="table-responsive">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Subject</th>
-                        <th>Topic/Module</th>
-                        <th>Assignment Due Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Subject">History</td>
-                        <td data-label="Topic/Module">Ancient Civilization</td>
-                        <td data-label="Assignment Due Date">15th July</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Subject">History</td>
-                        <td data-label="Topic/Module">Medieval Period</td>
-                        <td data-label="Assignment Due Date">22nd July</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Subject">English Literature</td>
-                        <td data-label="Topic/Module">Shakespearean Plays</td>
-                        <td data-label="Assignment Due Date">30th July</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Subject">English Literature</td>
-                        <td data-label="Topic/Module">Victorian Novels</td>
-                        <td data-label="Assignment Due Date">7th August</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Subject">Political Science</td>
-                        <td data-label="Topic/Module">Introduction to Political Theory</td>
-                        <td data-label="Assignment Due Date">15th August</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Subject">Political Science</td>
-                        <td data-label="Topic/Module">Comparative Politics</td>
-                        <td data-label="Assignment Due Date">22nd August</td>
-                    </tr>
-                    <!-- Add more rows for other subjects and topics -->
-                </tbody>
-            </table>
-        </div>
-        <div class="text-center mt-4">
-            <a href="schedule.html" class="btn btn-primary">Back to Programs</a>
-        </div>
+    <!-- Faqs Start -->
+         <div class="container-xxl py-5">
+             <div class="container">
+                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                     <h6 class="section-title bg-white text-center text-primary px-3">FAQs</h6>
+                     <h1 class="mb-5">Frequently Asked Questions</h1>
+                 </div>
+                 <div class="row g-4">
+                     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                         <h4 class="mb-3">General Questions</h4>
+                         <div class="accordion" id="accordionExample">
+                             <div class="accordion-item">
+                                 <h2 class="accordion-header" id="headingOne">
+                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                         How to register for a course?
+                                     </button>
+                                 </h2>
+                                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                     <div class="accordion-body">
+                                         To register for a course, please visit our website and click on the "Courses" section. From there, you can browse through the available courses and select the one you're interested in. Click on the "Enroll Now" button and follow the registration process.
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="accordion-item">
+                                 <h2 class="accordion-header" id="headingTwo">
+                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                         What are the payment options?
+                                     </button>
+                                 </h2>
+                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                     <div class="accordion-body">
+                                         We accept various payment methods, including credit/debit cards, PayPal, and bank transfers. You can choose the most convenient option for you during the registration process.
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                         <h4 class="mb-3">Course-Related Questions</h4>
+                         <div class="accordion" id="accordionExample2">
+                             <div class="accordion-item">
+                                 <h2 class="accordion-header" id="headingThree">
+                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                         What is the duration of the courses?
+                                     </button>
+                                 </h2>
+                                 <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
+                                     <div class="accordion-body">
+                                         The duration of our courses varies depending on the subject and level. Some courses may be a few weeks long, while others can last several months. You can find the specific duration for each course on its respective page.
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="accordion-item">
+                                 <h2 class="accordion-header" id="headingFour">
+                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                         Do you offer any certifications?
+                                     </button>
+                                 </h2>
+                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample2">
+                                     <div class="accordion-body">
+                                         Yes, upon successful completion of certain courses, we provide industry-recognized certifications. These certifications can enhance your professional credentials and career prospects. Details about certifications are provided on the respective course pages.
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    <div class="accordion-item " style="width: 83%; margin: auto;">
+                          <h2 class="accordion-header" id="headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  How can I get help or support?
+                              </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample2">
+                              <div class="accordion-body">
+                                  If you need any assistance or have questions, you can reach out to our support team through the "Contact Us" page on our website. Our dedicated support staff will be happy to help you with any queries or issues you may have.
+                              </div>
+                          </div>
     </div>
 
-
-
-
-
-
-
-  
+                  
+         
+    <!-- Faqs End -->
+     
         
 
     <!-- Footer Start -->
